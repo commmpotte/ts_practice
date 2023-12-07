@@ -5,10 +5,10 @@ This repository is dedicated to practicing TypeScript through various tasks.
 
 ## Tasks
 
-- [Task 1: Describe your task briefly](tasks/task1)
-- [Task 2: Describe your task briefly](tasks/task2)
-- [Task 3: Describe your task briefly](tasks/task2)
-- [Task 4: shopping cart](tasks/task4)
+[Task 1: Object typing](tasks/task1)
+[Task 2: Function typing](tasks/task2)
+[Task 3: Creating typeguard of response](tasks/task3)
+[Task 4: shopping cart](tasks/task4)
 Create a website shopping cart (Cart) that includes a list of added products (Product) and delivery parameters (Delivery). Implement the following methods for Cart:
 - Add a product to the cart.
 - Remove a product from the cart by ID.
