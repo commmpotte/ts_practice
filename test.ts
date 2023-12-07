@@ -1,20 +1,18 @@
-class UserService {
-  
-  static db: any
+abstract class Controller {
+  abstract handle(req: any): void
 
-  static getUser(id: number) {
-    return UserService.db.findById(id)
-  }
-  create() {
-    UserService.db
-  }
-
-  static {
-    UserService.db = 'smth'
+  handleWithLogs(req: any) {
+    console.log('Start')
+    this.handle(req)
+    console.log('End')
   }
 }
 
-UserService.getUser(2)
+class UserController extends Controller {
+  handle(req: any): void {
+    console.log(req)
+  }
+}
 
-const inst = new UserService()
-inst.create()
+const c = new UserController()
+c.handleWithLogs('Request')

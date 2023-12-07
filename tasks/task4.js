@@ -57,7 +57,7 @@ cart.addProduct(new Product(2, 'water', 1));
 cart.addProduct(new Product(3, 'eggs', 9));
 cart.addProduct(new Product(4, 'oat', 11));
 cart.deleteProduct(3);
-// cart.setDelivery(new HomeDelivery(new Date(), 'Attaba, Cairo, Egypt'))
+cart.setDelivery(new HomeDelivery(new Date(), 'Attaba, Cairo, Egypt'));
 console.log(cart.getSum());
 console.log(cart);
 console.log(cart.checkout());

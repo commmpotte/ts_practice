@@ -18,6 +18,8 @@ Create a website shopping cart (Cart) that includes a list of added products (Pr
 
 Product: id, name, and price.
 Delivery: can be either home delivery (date and address) or delivery to a pickup point (date = Today and store ID).
+[Task 4: Abstract logger](tasks/task5)
+
 
 
 
