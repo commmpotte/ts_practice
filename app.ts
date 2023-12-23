@@ -1,25 +1,20 @@
-class Vehicle {
-  run: number
+type UserRoles = {
+  customers?: Modifier
+  projects?: Modifier
+  adminPanel?: Modifier
 }
 
-function kmToMiles<T extends Vehicle>(vehicle: T): T {
-  vehicle.run = vehicle.run / 0.62
-  return vehicle
+type Modifier = 'read' | 'update' | 'create'
+
+type ModifierToAccess<Type> = {
+  [Property in keyof Type]-?: boolean
 }
 
-class LCV extends Vehicle {
-  capacity: number
-}
+// Mapped types
+type UserAccess2 = ModifierToAccess<UserRoles>
 
-const vehicle = kmToMiles(new Vehicle())
-const lcv = kmToMiles(new LCV())
-kmToMiles({ run: 1 })
-
-function lodID<T extends string | number, Y>(
-  id: T,
-  extraData: Y
-): { id: T; data: Y } {
-  console.log(id)
-  console.log(extraData)
-  return { id, data: extraData }
-}
+// type UserAccess1 = {
+//   customers?: boolean
+//   projects?: boolean
+//   adminPanel?: boolean
+// }

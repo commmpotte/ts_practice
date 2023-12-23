@@ -27,4 +27,8 @@ Create a website shopping cart (Cart) that includes a list of added products (Pr
   You need to write a function toString that takes any type and returns its string representation. If it can't, then it returns undefined.
 [Task 7: Function sort with generic](tasks/task7)
   You need to write a sorting function for any objects that have an 'id' property, sorting them in both descending and ascending order.
+[Task 8: Grouping function](tasks/task8)
+  You need to write a grouping function that takes an array of objects and a key, performs grouping based on the specified key, and returns the grouped object.
+  [Task 9: Mapping types](tasks/task9)
+Create a type to get the form validation results, or select a form type.
 
