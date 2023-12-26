@@ -32,3 +32,7 @@ Create a website shopping cart (Cart) that includes a list of added products (Pr
   [Task 9: Mapping types](tasks/task9)
 Create a type to get the form validation results, or select a form type.
 
+  [Task 10: Decoratoe](tasks/task10)
+A decorator that adds a property
+createdAt to the class, capturing the creation date
+
