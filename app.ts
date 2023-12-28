@@ -1,59 +1,29 @@
-interface IUserServiceApp {
-  users: number
-  getUserInDb(): number
-}
+// interface IUserServiceApp {
+//   users: number
+//   getUserInDb(): number
+// }
 
-// @setUsersAdvance(55)
-@setUser(22)
-@log()
-class UserServiceApp implements IUserServiceApp {
-  users: number
+// class UserServiceApp implements IUserServiceApp {
+//   users: number
 
-  getUserInDb(): number {
-    return this.users
-  }
-}
+//   @Log
+//   getUserInDb(): number {
+//     throw new Error('Ошибка')
+//   }
+// }
 
-function nullUser(target: Function) {
-  target.prototype.users = 0
-}
+// function Log(
+//   target: Object,
+//   propertyKey: string | symbol,
+//   descriptor: TypedPropertyDescriptor<(...args: any[]) => any>
+// ): TypedPropertyDescriptor<(...args: any[]) => any> | void {
+//   console.log('target', target)
+//   console.log('propertyKey', propertyKey)
+//   console.log('descriptor', descriptor)
 
-function setUsersAdvance(users: number) {
-  return <T extends { new (...args: any[]): {} }>(constructor: T) => {
-    return class extends constructor {
-      users = users
-    }
-  }
-}
+//   descriptor.value = () => {
+//     console.log('No error here')
+//   }
+// }
 
-function setUser(users: number) {
-  console.log('setUser init')
-  return (target: Function) => {
-    console.log('setUser run')
-    target.prototype.users = users
-  }
-}
-
-function log() {
-  console.log('log init')
-
-  return (target: Function) => {
-    console.log('log run')
-  }
-}
-
-function treeUserAdvance<T extends { new (...args: any[]): {} }>(
-  constructor: T
-) {
-  return class extends constructor {
-    users = 3
-  }
-}
-
-console.log(new UserServiceApp().getUserInDb())
-
-// setUser init
-// log init
-// log run
-// setUser run
-// 22
+// console.log(new UserServiceApp().getUserInDb())

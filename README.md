@@ -31,8 +31,9 @@ Create a website shopping cart (Cart) that includes a list of added products (Pr
   You need to write a grouping function that takes an array of objects and a key, performs grouping based on the specified key, and returns the grouped object.
   [Task 9: Mapping types](tasks/task9)
 Create a type to get the form validation results, or select a form type.
-
-  [Task 10: Decoratoe](tasks/task10)
+  [Task 10: Decorator](tasks/task10)
 A decorator that adds a property
-createdAt to the class, capturing the creation date
+createdAt to the class, capturing the creation date. 
+  [Task 11: Error catch decorator](tasks/task11)
+A decorator that catching errors.
 
