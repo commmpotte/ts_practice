@@ -36,4 +36,6 @@ A decorator that adds a property
 createdAt to the class, capturing the creation date. 
   [Task 11: Error catch decorator](tasks/task11)
 A decorator that catching errors.
+  [Task 12: Utils for completing commands]
+
 
